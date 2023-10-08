@@ -18,13 +18,13 @@ class _WelcomeState extends State<Welcome> {
       body: Container(
         height: MediaQuery.sizeOf(context).height,
         width: MediaQuery.sizeOf(context).width,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.center,
             colors: [
               Color.fromARGB(255, 80, 77, 77),
-              const Color.fromARGB(255, 0, 0, 0)
+              Color.fromARGB(255, 0, 0, 0)
             ],
           ),
         ),
@@ -32,22 +32,22 @@ class _WelcomeState extends State<Welcome> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 200,
               ),
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 40,
                 backgroundColor: Colors.white,
                 backgroundImage: AssetImage('assets/pngwing.com.png'),
               ),
-              Text(
+              const Text(
                 'Millions of songs.',
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 39,
                     fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 'Free on Spotify.',
                 style: TextStyle(
                     color: Colors.white,
@@ -62,9 +62,9 @@ class _WelcomeState extends State<Welcome> {
                   height: 50,
                   width: 360,
                   decoration: BoxDecoration(
-                      color: Color.fromARGB(201, 10, 131, 14),
+                      color: const Color.fromARGB(201, 10, 131, 14),
                       borderRadius: BorderRadius.circular(50)),
-                  child: Center(
+                  child: const Center(
                       child: Text(
                     'Sign up free',
                     style: TextStyle(
@@ -82,9 +82,9 @@ class _WelcomeState extends State<Welcome> {
                     height: 50,
                     width: 360,
                     decoration: BoxDecoration(
-                        color: Color.fromARGB(201, 10, 131, 14),
+                        color: const Color.fromARGB(201, 10, 131, 14),
                         borderRadius: BorderRadius.circular(50)),
-                    child: Row(
+                    child: const Row(
                       children: [
                         Gap(20.0),
                         Icon(Icons.tag_faces_outlined),
