@@ -2,7 +2,11 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:spotify/main.dart';
+import 'package:spotify/Screens/welcometo/fb.dart';
+import 'package:spotify/Screens/welcometo/google.dart';
+import 'package:spotify/Screens/welcometo/login.dart';
+import 'package:spotify/Screens/welcometo/phonenumber.dart';
+import 'package:spotify/Screens/welcometo/signupfree.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
@@ -57,9 +61,11 @@ class _WelcomeState extends State<Welcome> {
               ),
               const Gap(50),
               InkWell(
-                onTap: () {
-                  return;
-                },
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Signupfreescreen(),
+                    )),
                 child: Container(
                   height: 50,
                   width: 360,
@@ -78,9 +84,11 @@ class _WelcomeState extends State<Welcome> {
               ),
               const Gap(5),
               InkWell(
-                onTap: () {
-                  return;
-                },
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Phonenumber(),
+                    )),
                 child: Container(
                     height: 50,
                     width: 360,
@@ -107,9 +115,11 @@ class _WelcomeState extends State<Welcome> {
               ),
               const Gap(5),
               InkWell(
-                onTap: () {
-                  return;
-                },
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Google(),
+                    )),
                 child: Container(
                     height: 50,
                     width: 360,
@@ -137,9 +147,11 @@ class _WelcomeState extends State<Welcome> {
               ),
               const Gap(5),
               InkWell(
-                onTap: () {
-                  return;
-                },
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const facebook(),
+                    )),
                 child: Container(
                     height: 50,
                     width: 360,
@@ -165,9 +177,11 @@ class _WelcomeState extends State<Welcome> {
                     )),
               ),
               InkWell(
-                onTap: () {
-                  return;
-                },
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const login(),
+                    )),
                 child: Container(
                   height: 50,
                   width: 360,

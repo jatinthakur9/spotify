@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spotify/Screens/welcome.dart';
+import 'package:spotify/Screens/welcometo/login.dart';
+import 'package:spotify/Screens/welcometo/signupfree.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Welcome(),
+      home: const login(),
     );
   }
 }
